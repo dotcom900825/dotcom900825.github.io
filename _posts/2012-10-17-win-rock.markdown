@@ -1,0 +1,34 @@
+---
+author: admin
+comments: true
+date: 2012-10-17 02:33:43+00:00
+layout: post
+slug: win-rock
+title: WIN rock
+wordpress_id: 105
+---
+
+唔上周cs11的**商店模拟器**太狗了，没看清assignment的要求，把功能实现错了，浪费了很多宝贵时间，另外为了帮Kristina和另外一个freshman小朋友debug，又搭进去了两个晚上，导致直接jason那边实验室的活儿毫无进度。one on one的时候很诚恳的和jason解释，作业太多，overwhelming，下周一定好好干！Server-side作业也开始留了，再加上jason的活儿和软件工程的各种文档加开发，周末的Universal Studio不打算去了，回头去Disney land得了！加油吧少年！
+
+
+
+# 开心的事
+
+
+
+cs11f的quiz1得了满分，assignment1的画海龟也是，但注释和代码风格被扣了5分，虽然bonus给补回来了但还是要注意。
+
+软件工程的小组也有了队名，WIN 是个acronynm **World wide inventory network** 我感觉自己是team里仅次于cory最上心的，把github的教程，Django的教程都整理好放到了google doc上，而且还去联系珠宝店的owner，问他哪个theme他最喜欢。 周末花了很多时间修改前端的网页，现在已经放到了我的域名下，[http://www.arc-trooper.com/micheal/](http://www.arc-trooper.com/micheal/) 用的Bootstrap和Jquery，从wrapbootstrap [http://www.wrapbootstrap.com](http://www.wrapbootstrap.com)上购买的theme，进行二次开发。昨天第一次customer meeting，我们组第一个上台，由我向大家介绍我们将要用的技术，虽然有点紧张，但竟然没打磕巴，看来还是对技术术语熟悉。昨天cory发邮件问团队是否需要一个deputy，matt还nominate了我，能得到队友的信任很开心！
+
+
+
+# 不开心的事
+
+
+
+钥匙丢了，补办15刀
+
+去超市买草莓，没仔细看，买到了发霉的
+
+队友Brian对项目感觉不太上心，但我们是core dev team，我们是否努力直接决定了团队的网站是否能及时交付，我觉得需要和cory和他聊聊
+
