@@ -1,46 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    {% if page.title %}
+    <title>{{ page.title }} — Yu Xia</title>
+    {% else %}
+    <title>Yu Xia</title>
+    {% endif %}
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{{page.categories | join: ', '}}"/>
+    <meta charset="utf-8">
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
 
-    </head>
-    <body>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='//fonts.googleapis.com/css?family=Vollkorn:400italic|Roboto+Slab|Fjalla+One&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+    <link href="/css/main.min.css" rel="stylesheet" />
+    <link href="/css/pygments.min.css" rel="stylesheet" />
 
-                {{ content }}
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  dotcom900825@gmail.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/dotcom900825</a><br />
-                  <a href="http://www.fishtrip.cn">大鱼旅行 Rails 工程师</a><br />
-                </p>
-              </div>
-            </div>
+
+    <meta content="{{ site.title }}" property="og:site_name" />
+
+    {% if page.title %}
+    <meta content="{{ page.title | escape }}" property="og:title" />
+    <meta property="twitter:title" content="{{ page.title | escape }}" />
+    {% else %}
+    <meta content="{{ site.title | escape }}" property="og:title" />
+    <meta property="twitter:title" content="{{ site.title | escape }}" />
+    {% endif %}
+
+    {% if page.title %}
+    <meta content="article" property="og:type" />
+    {% else %}
+    <meta content="website" property="og:type" />
+    {% endif %}
+
+    {% if page.description %}
+    <meta content="{{ page.description | escape }}" property="og:description" />
+    <meta property="twitter:description" content="{{ page.description | escape }}" />
+    {% elsif page.content %}
+    <meta content="{{ page.content | strip_html | truncate: 300 | strip_newlines_with_space | escape }}" property="og:description" />
+    <meta property="twitter:description" content="{{ page.content | strip_html | truncate: 200 | | strip_newlines_with_space | escape }}" />
+    {% else %}
+    <meta content="{{ site.description | escape }}" property="og:description" />
+    <meta property="twitter:description" content="{{ site.description | escape }}" />
+    {% endif %}
+
+    {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+    {% endif %}
+
+    {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time" />
+    <meta content="{{ site.url }}/contact.html" property="article:author" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@fabienpenso" />
+
+    <meta property="twitter:creator" content="@fabienpenso" />
+    {% endif %}
+
+    <meta name="author" content="Fabien Penso" />
+
+    {% if page.photo %}
+    <meta content="{{ page.photo }}" property="og:image" />
+    <meta property="twitter:image:src" content="{{ page.photo }}" />
+    {% else %}
+    {% if page.image %}
+    <meta content="{{ site.url }}/assets/img/posts/{{ page.image }}" property="og:image" />
+    <meta property="twitter:image:src" content="{{ site.url }}/assets/img/posts/{{ page.image }}" />
+    {% endif %}
+    {% endif %}
+    {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section" />
+    {% endfor %}
+    {% endif %}
+  </head>
+  <body>
+    <div class="container-narrow">
+
+      <div class="top_name">
+        <a href="/"><b>Yu Xia, 夏宇</b></a>
+      </div>
+
+      <div class="navbartop">
+        <div class="pull-right nolinkcolor header">
+          <ul class="nav nav-pills">
+            {% for node in site.toplinks %}
+            {% capture node_name %}/{{ node }}.html{% endcapture %}
+            {% if node_name == page.url %}
+            <li class="active"><a href="/{{node}}.html" class="active">{{node | capitalize}}</a></li>
+            {% else %}
+            <li><a href="/{{node}}.html">{{node | capitalize}}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <ul class="nav nav-pills nolinkcolor header hidden-phone">
+          <li>
+          <a href="/"><i class="icon-home"></i> Home</a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="post-author-side hidden-phone" id="stick-avatar">
+        <div class="post-author-card">
+          <div class="picture">
+            <a href="/"><img src="/img/avatar.jpg" class="img-circle" width="95" alt="Me" /></a>
           </div>
-        </div> <!-- /container -->
+          <p class="muted">
+          Rails&amp; ios <br> UCSD CSE 2013 Fall
+          </p>
+          <p class="muted">
+          <a href="#">@dotcomXY</a>
+          </p>
+        </div>
+      </div>
 
-    </body>
+      <div id="website-content">
+        {{ content }}
+      </div>
+
+      <div class="social_icons">
+        <div class="pull-right">
+          <form action="http://fabienpenso.us6.list-manage.com/subscribe/post?u=26988d6b101b0274a6b9db738&amp;id=771bd90ff3"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="input-append">
+              <input type="email" value="" name="EMAIL" class="input-medium" id="mce-EMAIL" placeholder="email address" required />
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
+            </div>
+          </form>
+        </div>
+        <a href="http://github.com/dotcom900825" title="Github"><img src="/img/github-icon.png" width="30" height="30" alt="Github"/></a>
+        <a href="#" title="Twitter"><img src="/img/twitter-icon.png" width="30" height="30" alt="Twitter"/></a>
+        <a href="#" title="Facebook"><img src="/img/facebook-icon.png" width="30" height="30" alt="Facebook"/></a>
+        <a href="#" title="LinkedIn"><img src="/img/linkedin-icon.png" width="30" height="30" alt="LinkedIn"/></a>
+        <a href="/atom.xml"><img src="/img/rss-icon.png" width="30" height="30" alt="RSS"/></a>
+      </div>
+
+      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script src="/js/jquery-footnotes.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-299804-3']);
+        _gaq.push(['_trackPageview']);
+        setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
+
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+
+        // Cache selectors outside callback for performance.
+/*
+        var $window = $(window),
+        $stickyEl = $('#stick-avatar'),
+        elTop = $stickyEl.offset().top;
+
+        $window.scroll(function() {
+          $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+        });
+        */
+       </script>
+    </div>
+  </body>
 </html>
