@@ -1,4 +1,3 @@
-# encoding: GB2312
 ---
 author: admin
 comments: true
