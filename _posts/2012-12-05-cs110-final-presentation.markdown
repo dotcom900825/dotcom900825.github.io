@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2012-12-05 22:56:31+00:00
 layout: post
-slug: cs110-final-presentation%e5%90%8e%e7%9a%84%e6%84%9f%e6%83%b3
+slug: cs110-final-presentation
 title: UCSD CS110 Final Presentation后的感想
 wordpress_id: 143
 ---
@@ -54,7 +54,7 @@ Team SOL – Software Optimization Logistics 7人团队，做的类似于OCD，�
 
 
 
-虽然最后大家投票，我们组排名第二，但我自己认为第一当之无愧是OCD，第二是WTF，第三是WAIT，我们排第四，因为论UI，我觉得我们做的一般，网站的功能也非常简单，实现的也是中规中矩的小型电商网站，而WTF有非常好的商业方案和功能实现，如果上线，感觉会发展很快。 WAIT没有绚丽的UI，但很朴实，为它们的客户提供最好的解决方案，专注解决问题。 
+虽然最后大家投票，我们组排名第二，但我自己认为第一当之无愧是OCD，第二是WTF，第三是WAIT，我们排第四，因为论UI，我觉得我们做的一般，网站的功能也非常简单，实现的也是中规中矩的小型电商网站，而WTF有非常好的商业方案和功能实现，如果上线，感觉会发展很快。 WAIT没有绚丽的UI，但很朴实，为它们的客户提供最好的解决方案，专注解决问题。
 
 
 

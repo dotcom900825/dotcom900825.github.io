@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2013-01-11 05:17:46+00:00
 layout: post
-slug: '%e5%96%9c%e6%8b%be%e7%bd%91%e4%bb%8b%e7%bb%8d'
+slug: what-is-xishi
 title: 喜拾网介绍
 wordpress_id: 174
 ---

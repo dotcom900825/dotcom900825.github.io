@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2012-09-28 05:30:43+00:00
 layout: post
-slug: '%e4%b8%8a%e8%af%be%e7%ac%ac%e4%b8%80%e5%a4%a9'
+slug: first-day-in-school
 title: 上课第一天
 wordpress_id: 37
 categories:

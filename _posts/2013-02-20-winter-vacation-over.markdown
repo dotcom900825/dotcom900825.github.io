@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2013-02-20 10:53:09+00:00
 layout: post
-slug: '%e5%af%92%e5%81%87%e5%8d%b3%e5%b0%86%e7%bb%93%e6%9d%9f'
+slug: winter-vacation-over
 title: 寒假即将结束~
 wordpress_id: 189
 ---

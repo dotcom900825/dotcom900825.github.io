@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2013-01-11 05:03:15+00:00
 layout: post
-slug: ucsd%e4%b8%89%e4%b8%aa%e6%9c%88%e5%ad%a6%e4%b9%a0%e6%84%9f%e5%8f%97
+slug: ucsd-3-month
 title: UCSD三个月学习感受
 wordpress_id: 172
 ---

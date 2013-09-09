@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2013-01-11 05:31:52+00:00
 layout: post
-slug: '%e6%96%b0%e5%b9%b4%e6%96%b0%e6%b0%94%e8%b1%a1'
+slug: new-year-new-start
 title: 新年新气象
 wordpress_id: 179
 ---

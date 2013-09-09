@@ -3,7 +3,7 @@ author: admin
 comments: true
 date: 2012-09-23 23:26:32+00:00
 layout: post
-slug: ili-%e8%80%81%e9%bb%84%e4%b8%80%e8%b7%af%e9%a1%ba%e9%a3%8e%ef%bc%81
+slug: ili-fly-safe
 title: Ili, 老黄一路顺风！
 wordpress_id: 31
 categories:
