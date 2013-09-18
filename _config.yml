@@ -1,4 +1,4 @@
 name: arc-trooper's chitchat
 markdown: redcarpet
 pygments: true
-toplinks: ['about', 'archive', 'contact']
+toplinks: ['archive']
