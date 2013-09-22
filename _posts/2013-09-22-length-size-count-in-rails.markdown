@@ -9,8 +9,6 @@ category: tech
 tags: Rails ActiveRecord
 ---
 
-##length, size, count, in Rails 3.2.3
-
 Before the new semester begins, I read a lot of Rails best practices, one book is really helpful:  **[Rails Antipattern](http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814)**.  I read about a little trick that reminds me of the days working in Fishtrip.cn.
 
 When I was developing the order statistic product, I need to count the number of total orders. So I do this: ``Order.succeed.all.length``.  However, on the code review, our tech lead Medal Huang told me that this would result in bad performence and I should use count or size instead. I was not sure about the difference between those three method calls. And until now when I was reading Rails Antipattern, in chapter 8 Scaling and Deploying there is a comparison between those three methods and explanation.
