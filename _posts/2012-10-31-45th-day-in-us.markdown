@@ -6,6 +6,8 @@ layout: post
 slug: 45th-day-in-us
 title: 来美帝一个半月了
 wordpress_id: 109
+category: life
+tags: UCSD CSE110 GradSchool
 ---
 
 ## 来到美帝的第45天

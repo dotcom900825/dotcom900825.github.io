@@ -6,6 +6,8 @@ layout: post
 slug: good-to-have-a-awesome-team
 title: Good to have a awesome team!
 wordpress_id: 90
+category: life
+tags: UCSD CSE110
 ---
 
 在ucsd的第三周，课程强度越来越大，software engineering上周的lab竟然要写Junit的测试，都是现场看代码现学的。cs11f java的作业也狗的一逼，用老师给的绘图库做一个

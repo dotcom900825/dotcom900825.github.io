@@ -6,6 +6,8 @@ layout: post
 slug: busy-working-haha
 title: ucsd or ucla
 wordpress_id: 47
+category: life
+tags: UCSD GradSchool
 ---
 
 # 在学校的生活逐步走向正轨

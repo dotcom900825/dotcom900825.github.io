@@ -6,7 +6,7 @@ layout: post
 slug: goodnightbeijing
 title: 晚安！ 北京~
 wordpress_id: 1
-tags: beijing microsoft
+tags: Beijing Microsoft
 ---
 
 明天下午四点就要离开北京，飞往加州的圣地亚哥，开始一段新的旅程，在 [UCSD](http://www.ucsd.edu/) 读3个月的Computer Science。 小的时候在宣化读幼儿园和小学，回到北京后在一直在海淀读的小学初中和高中大学，就没出过海淀，突然要到异国他乡求学还真不太适应. 回忆刚过去的假期，感觉非常充实，在微软搜索技术中心实习的两个月收获很多，我是2012年7月9号入职，在STCA的Lab team实习了两个月，我们部门主要是负责STCA 600多员工的IT support和数据中心1000多台服务器的管理，我的工作是维护和开发mentor已经基本做好的management website，改进性能，做一些feature，UI方面的工作，在微软感触最深的有几点

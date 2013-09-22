@@ -6,8 +6,8 @@ layout: post
 slug: ili-fly-safe
 title: Ili, 老黄一路顺风！
 wordpress_id: 31
-categories: life in ucsd
-tags: ucsd life
+tags: UCSD
+category: life
 ---
 
 我在costa verde第一周的舍友是一个台湾人，他叫Ili li, 很安静腼腆的男生，他看上去虽然很年轻，但实际上已经25岁了哈哈。

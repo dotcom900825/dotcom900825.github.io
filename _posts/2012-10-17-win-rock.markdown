@@ -6,6 +6,8 @@ layout: post
 slug: win-rock
 title: WIN rock
 wordpress_id: 105
+category: life
+tags: UCSD CSE110
 ---
 
 唔上周cs11的**商店模拟器**太狗了，没看清assignment的要求，把功能实现错了，浪费了很多宝贵时间，另外为了帮Kristina和另外一个freshman小朋友debug，又搭进去了两个晚上，导致直接jason那边实验室的活儿毫无进度。one on one的时候很诚恳的和jason解释，作业太多，overwhelming，下周一定好好干！Server-side作业也开始留了，再加上jason的活儿和软件工程的各种文档加开发，周末的Universal Studio不打算去了，回头去Disney land得了！加油吧少年！
