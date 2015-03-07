@@ -1,3 +1,13 @@
+---
+author: admin
+comments: true
+date: 2014-12-31 22:54:00+00:00
+layout: post
+slug: 2014-summary
+title: 你好，2014
+tags: UCSD Life Work
+---
+
 距离上一次写博客又过去半年了，在即将跨入2015年的时候，想记录下我的2014。
 
 ##工作上：
